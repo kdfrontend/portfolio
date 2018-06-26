@@ -38,7 +38,7 @@ $(window).on("scroll", function() {
       if ($(window).outerWidth() >= 992) {
          var elemTop = $(this).offset().top - headerHeight - 1;
       } else {
-         var elemTop = $(this).offset().top;
+         var elemTop = $(this).offset().top - 1;
       }
       var elemBottom = $(this).offset().top + $(this).height();
       if (currentTop >= elemTop && currentTop <= elemBottom) {
